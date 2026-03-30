@@ -47,7 +47,6 @@ void main()
             wt[pos] = tat[pos] - bt[pos];
             done[pos] = 1;
             completed++;
-
             atat += tat[pos];
             awt += wt[pos];
         }
