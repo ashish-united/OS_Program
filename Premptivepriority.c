@@ -27,17 +27,15 @@ void main() {
 
         // find process with highest priority among arrived and not finished
         for(i = 0; i < n; i++) {
-            if(at[i] <= time && rt[i] > 0) {
-                if(pr[i] < minPriority) {
+            if(at[i] <= time && rt[i] > 0&&pr[i] < minPriority) {
                     minPriority = pr[i];
                     pos = i;
-                }
             }
         }
 
         if(pos != -1) {
-            rt[pos]--; // run process for 1 unit
             time++;
+            rt[pos]--; // run process for 1 unit
 
             if(rt[pos] == 0) { // process finished
                 completed++;
