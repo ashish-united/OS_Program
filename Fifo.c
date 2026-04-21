@@ -29,7 +29,7 @@
         printf("\nPage %d -> ",page);
         for(k=0;k<framecount;k++){
             if(frame[k]==-1){
-                printf(" - ");
+                printf(" -");
             }
             else{
                 printf("%d ", frame[k]);
